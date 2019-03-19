@@ -15,16 +15,16 @@
                   @method('PATCH')
                   @csrf
                   <div class="form-group row">
-                   <label for="level" class="col-md-4 col-form-label text-md-right">Actividad</label>
+                   <label for="activitieid" class="col-md-4 col-form-label text-md-right">Actividad</label>
 
                    <div class="col-md-6">
-                      <select class="form-control" id="roleid" name="activitieid">
+                      <select class="form-control" id="activitieid" name="activitieid">
                         <option value="{{ $task->activitie->id }}">{{ $task->activitie->fullname }}</option>
                       </select>
                   </div>
                  </div>
                  <div class="form-group row">
-                     <label for="fullname" class="col-md-4 col-form-label text-md-right">Nombre</label>
+                     <label for="name" class="col-md-4 col-form-label text-md-right">Nombre</label>
 
                      <div class="col-md-6">
                          <input id="name" type="text" class="form-control" name="name" value="{{ $task->name }}" required autofocus>
@@ -38,7 +38,7 @@
                      </div>
                  </div>
                  <div class="form-group row">
-                   <label for="description" class="col-md-4 col-form-label text-md-right">Solución</label>
+                   <label for="solution" class="col-md-4 col-form-label text-md-right">Solución</label>
 
                    <div class="col-md-6">
                        <textarea class="form-control" id="solution" name="solution" rows="3">{{ $task->solution }}</textarea>

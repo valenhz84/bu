@@ -26,9 +26,9 @@
 
              <h5 class="card-title">{{ $task->activitie->fullname ." : ". $task->name }}</h5>
             <h5 class="card-title">Descripción</h5>
-            <p class="card-text">{{ $task->description }}</p>
+            <p class="card-text">{!! $task->description !!}</p>
             <h5 class="card-title">Solución</h5>
-            <p class="card-text">{{ $task->solution }}</p>
+            <p class="card-text">{!! $task->solution !!}</p>
 
 
             </div> <!-- End card-body -->

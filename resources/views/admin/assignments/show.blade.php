@@ -25,9 +25,9 @@
 
              <h5 class="card-title">{{ $assignment->activitie->fullname ." : ". $assignment->name }}</h5>
             <h5 class="card-title">Descripción</h5>
-            <p class="card-text">{{ $assignment->description }}</p>
+            <p class="card-text">{!! $assignment->description !!}</p>
             <h5 class="card-title">Solución</h5>
-            <p class="card-text">{{ $assignment->solution }}</p>
+            <p class="card-text">{!! $assignment->solution !!}</p>
 
 
             </div> <!-- End card-body -->
