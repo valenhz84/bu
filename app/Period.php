@@ -9,7 +9,7 @@ class Period extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'Periods';
+    protected $table = 'periods';
     protected $dates = ['deleted_at'];
 
     public function assignments()

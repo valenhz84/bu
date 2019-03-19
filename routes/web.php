@@ -26,9 +26,9 @@ Route::middleware(['auth'])->group(function () {
 	Route::post('/tasks/update_status_burequest/{id}', 'BURequestController@update_status')->name('update_status_burequest');
 	Route::post('/reports/tasks/reports_tasks_store', 'ReportController@store')->name('reports_tasks_store');
 
-	Route::resource('/tasks', 'TaskController');
-	Route::resource('/requests', 'BURequestController');
-	Route::resource('/reports', 'ReportController');
+	Route::resource('/tasks', 'TaskController')->middleware('verified');
+	Route::resource('/requests', 'BURequestController')->middleware('verified');
+	Route::resource('/reports', 'ReportController')->middleware('verified');
 	//admin
 	Route::post('/admin/users/update_role/{id}', 'UserController@update_role')->name('update_role')->middleware('admin');
 	Route::get('/admin/periods/update_active/{id}', 'PeriodController@update_active')->name('update_active')->middleware('admin');

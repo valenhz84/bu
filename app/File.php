@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class File extends Model
 {
-    protected $table = 'Files';
+    protected $table = 'files';
 
     public function assignment()
     {

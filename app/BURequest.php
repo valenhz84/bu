@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class BURequest extends Model
 {
-    protected $table = 'Requests';
+    protected $table = 'requests';
 
     public function user()
     {

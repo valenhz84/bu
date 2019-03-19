@@ -10,7 +10,7 @@ class Role extends Model
 {
     use SoftDeletes;
 	
-    protected $table = 'Roles';
+    protected $table = 'roles';
     protected $dates = ['deleted_at'];
 
     /**

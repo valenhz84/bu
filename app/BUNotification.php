@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class BUNotification extends Model
 {
-    protected $table = 'Notifications';
+    protected $table = 'notifications';
 
     public function user()
     {

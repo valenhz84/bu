@@ -9,7 +9,7 @@ class Activitie extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'Activities';
+    protected $table = 'activities';
     protected $dates = ['deleted_at'];
 
     public function assignments()
