@@ -17,7 +17,7 @@
             
               <p class="card-text">
                   @if($task->status == 1)
-                  <span class="badge badge-success">Concluido</span>
+                  <span class="badge badge-success">Resuelto</span>
                   @else
                   <span class="badge badge-warning">Pendiente</span>
                   @endif

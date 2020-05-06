@@ -19,9 +19,15 @@ class FileController extends Controller
      */
     public function store(Request $request, $id)
     {
-        if($request->file('file') == NULL){
+        /*if($request->file('file') == NULL){
             return redirect()->route('tasks.show', [$id])->withErrors('Ocurrio un error al enviar el archivo');
-        }else{
+        }else{*/
+
+        $rules = [
+            'file' => 'required|file|max:2048'
+        ];
+
+        $this->validate($request, $rules);
 
         $file = $request->file('file');
 	    $fileName = $file->getClientOriginalName();
@@ -37,7 +43,7 @@ class FileController extends Controller
         $file->save();
 
         return redirect()->route('tasks.show', [$id]);
-        }
+        //}
     }
 
     /**

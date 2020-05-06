@@ -44,7 +44,7 @@
                             @if($burequest->status == 0)
                             <td><span class="badge badge-warning">Pendiente</span></td>
                             @else
-                            <td><span class="badge badge-success">Concluido</span></td>
+                            <td><span class="badge badge-success">Resuelto</span></td>
                             @endif
                             <td>
                               <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#update_status_burequest_{{ $burequest->id }}"
