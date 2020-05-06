@@ -15,7 +15,7 @@ class UsersTableSeeder extends Seeder
         	[
             	'firstname' => 'Darinel',
             	'lastname' => 'Valencia',
-            	'email' => 'darinel.valencia@unach.mx',
+            	'email' => 'darinel.valencia@gmail.com',
             	'description' => 'Darinel Valencia, administrador de sistemas UNACH',
             	'email_verified_at' => Carbon::now()->format('Y-m-d H:i:s'),
             	'password' => bcrypt('qwerty'),
