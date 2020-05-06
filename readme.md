@@ -1,6 +1,6 @@
 # Sistema de registro de actividades
 
-BU es un sistema para el seguimiento de actividades, desarrollado en Laravel 5.8
+BU es un sistema para el registro de actividades, desarrollado en Laravel 5.8
 
 ## Installation
 
