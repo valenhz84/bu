@@ -7,7 +7,7 @@ BU es un sistema para el seguimiento de actividades, desarrollado en Laravel 5.8
 Para instalar la base de datos y el usuario admin
 
 ```bash
-php artisan migrate --seeds
+php artisan migrate --seed
 ```
 
 ## Contributing
