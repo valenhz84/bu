@@ -13,10 +13,10 @@ class UsersTableSeeder extends Seeder
     {
         DB::table('users')->insert([
         	[
-            	'firstname' => 'Darinel',
-            	'lastname' => 'Valencia',
-            	'email' => 'darinel.valencia@gmail.com',
-            	'description' => 'Darinel Valencia, administrador de sistemas UNACH',
+            	'firstname' => 'Admin',
+            	'lastname' => 'Siatema',
+            	'email' => 'admin@email.com',
+            	'description' => 'Admin Sistemas',
             	'email_verified_at' => Carbon::now()->format('Y-m-d H:i:s'),
             	'password' => bcrypt('qwerty'),
             	'remember_token' => '',
