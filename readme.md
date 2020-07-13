@@ -7,6 +7,11 @@ BU es un sistema para el registro de actividades, desarrollado en Laravel 5.8
 Para instalar la base de datos y el usuario admin
 
 ```bash
+
+composer update
+cp .env.example .env
+php artisan key:generate
+
 php artisan migrate --seed
 
 user: admin@email.com
