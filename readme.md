@@ -8,6 +8,9 @@ Para instalar la base de datos y el usuario admin
 
 ```bash
 php artisan migrate --seed
+
+user: admin@email.com
+pass: qwerty
 ```
 
 ## Contributing
